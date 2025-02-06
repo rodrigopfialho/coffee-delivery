@@ -5,6 +5,7 @@ export const Container = styled.div`
   width: 100%;
   padding-top: 5.875rem;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 
   img#hero-bg {
@@ -15,11 +16,6 @@ export const Container = styled.div`
     width: 100%;
     height: 100vh;
     object-fit: cover;
-  }
-
-  aside {
-    width: 29.75rem;
-    height: 22.5rem;
   }
 `;
 
@@ -55,4 +51,20 @@ export const Info = styled.div`
     padding: 6px;
     border-radius: 100%;
   }
+`;
+
+export const Content = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 152px;
+`;
+
+export const CoffeeList = styled.main`
+margin-top: 54px;
+width: 100%;
+height: 100vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+gap: 26px;
+
 `;

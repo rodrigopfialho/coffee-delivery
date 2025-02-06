@@ -8,9 +8,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    max-width: 1440px;
+    max-width: 1540px;
+    padding: 1rem;
     margin: 0 auto;
-    padding: 1rem 2rem;
     background: ${(props) => props.theme.background};
     color: ${(props) => props.theme['base-text']};
     -webkit-font-smoothing: antialiased;
