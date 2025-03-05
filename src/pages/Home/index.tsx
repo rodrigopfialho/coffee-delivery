@@ -55,7 +55,7 @@ export function Home() {
             </div>
           </Info>
         </div>
-        <img src="/images/hero.svg" alt="logo Coffee Delivery" />
+        <img src="/images/hero.svg" id="coffee" alt="logo Coffee Delivery" />
       </Content>
       <img src={ImgBack} id="hero-bg" alt="" />
 

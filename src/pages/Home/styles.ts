@@ -8,6 +8,13 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
+  /* img#coffee {
+    width: 29.75rem;
+    height: 22.5rem;
+    width: 30%;
+  } */
+  
+
   img#hero-bg {
     position: absolute;
     top: 0;
@@ -60,11 +67,12 @@ export const Content = styled.div`
 `;
 
 export const CoffeeList = styled.main`
-margin-top: 54px;
-width: 100%;
-height: 100vh;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-gap: 26px;
-
+  margin-top: 54px;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
 `;
