@@ -14,6 +14,16 @@ export const GlobalStyle = createGlobalStyle`
     background: ${(props) => props.theme.background};
     color: ${(props) => props.theme['base-text']};
     -webkit-font-smoothing: antialiased;
+
+    input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+    }
+    input[type=number] { 
+      -moz-appearance: textfield;
+      appearance: textfield;
+
+    }
   }
 
   button {
