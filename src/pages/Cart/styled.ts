@@ -1,10 +1,16 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 2rem;
 `;
-export const ContentAddress = styled.div``;
+
+export const ContentAddress = styled.div`
+  
+`;
 
 export const Address = styled.div`
   width: 40rem;
@@ -20,6 +26,22 @@ export const Address = styled.div`
   }
 
   form {
+
+    input::placeholder {
+      font-size: 0.875rem;
+      font-family: Roboto "sans-serif";
+      color: ${(props) => props.theme["base-label"]};
+      line-height: 130%;
+    }
+
+    input {
+      font-size: 0.875rem;
+      font-family: Roboto "sans-serif";
+      line-height: 130%;
+      color: ${(props) => props.theme["base-text"]};
+      padding-left: 12px;
+    }
+    
     background-color: ${(props) => props.theme["base-card"]};
     padding: 40px;
     width: 100%;
@@ -112,6 +134,7 @@ export const InputBairro = styled.div`
   input:last-child{
     width: 3.75rem;
     height: 2.625rem;
+    text-transform: uppercase;
   }
 `;
 
@@ -159,6 +182,113 @@ export const PaymentMethod = styled.div`
     font-family: Roboto, sans-serif;
     color: ${(props) => props.theme['base-text']};
     padding-left: 1rem;
-    gap: 1rem
+    gap: 1rem;
+    border: 1px solid transparent
   }
+
+  button:hover{
+    background-color: ${(props) => props.theme['purple-light']};
+    border: 1px solid ${(props) => props.theme['purple']};
+  }
+`;
+
+export const ContentSelectedCoffee = styled.div`
+display: flex;
+flex-direction: column;
+
+h3 {
+  font-family: "Baloo 2", serif;
+  font-size: 1.125rem;
+  color: ${(props) => props.theme['base-subtitle']}
+}
+
+`;
+
+export const SelectedCoffee = styled.div`
+  width: 28rem;
+  height: 31.125rem;
+  background-color: ${(props) => props.theme['base-card']};
+  border-radius: 0 40px 0 40px;
+  padding: 40px;
+
+  div {
+    display: flex;
+    align-items:  start;
+    
+
+    img {
+      width: 64px;
+      height: 64px;
+      margin-right: 20px;
+    }
+
+    #legendCoffee {
+      margin-right: 50px;
+      font-family: Roboto, sans-serif;
+      font-size: 1rem;
+      color: ${(props) => props.theme['base-subtitle']}
+    }
+
+    strong {
+      font-size: 1rem;
+      color: ${(props) => props.theme['base-text']}
+    }
+  }
+
+  #GroupButton {
+    display: flex;
+    justify-content: center;
+    margin-top: -35px;
+    margin-left: -30px;
+
+    #ButtonADDeMinus {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 4.5rem;
+    height: 32px;
+    background: ${(props) => props.theme['base-button']};;
+    border-radius: 6px;
+    margin-right: 8px;
+
+    button {
+      background: none;
+    }
+
+    span {
+      font-family: Roboto, sans-serif;
+      font-size: 1rem;
+      color: ${(props) => props.theme['base-title']}
+    }
+  }
+
+  #ButtonRemove {
+    width: 5.68rem;
+    height: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: ${(props) => props.theme['base-button']};;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    }
+  }
+
+  
+`;
+export const OrderConfirmation = styled.div`
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  
+  div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+`;
+
+export const ButtonConfirm = styled.button`
+
 `;
