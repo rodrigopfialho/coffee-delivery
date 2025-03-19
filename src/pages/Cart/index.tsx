@@ -98,7 +98,7 @@ export function Cart() {
 
       <ContentSelectedCoffee>
         <h3>Cafés selecionados</h3>
-        <SelectedCoffee>
+        <SelectedCoffee>          
           <div>
             <img src={Expresso} alt="" />
             <span id="legendCoffee">Expresso Tradicional</span>
@@ -114,12 +114,14 @@ export function Cart() {
                 <Plus size={14} color={theme["purple"]} />
               </button>
             </div>
+            
 
             <button id="ButtonRemove">
               <Trash size={14} color={theme["purple"]} />
               REMOVER
             </button>
           </div>
+          
 
           <OrderConfirmation>
             <div>
@@ -134,7 +136,7 @@ export function Cart() {
               <strong>Total</strong>
               <strong>R$ 33,20</strong>
             </div>
-            <ButtonConfirm>
+            <ButtonConfirm type="button">
               Confirmar Pedido
             </ButtonConfirm>
           </OrderConfirmation>

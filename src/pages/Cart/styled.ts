@@ -6,6 +6,7 @@ export const Container = styled.div`
   display: flex;
   /* grid-template-columns: 1fr 1fr; */
   gap: 2rem;
+  flex-wrap: wrap;
 `;
 
 export const ContentAddress = styled.div`
@@ -106,7 +107,6 @@ export const InputNumero = styled.div`
   input + input {
     width: 21.88rem;
     height: 2.625rem;
-
   }
 
 `;
@@ -123,7 +123,6 @@ export const InputBairro = styled.div`
     background-color: ${(props) => props.theme['base-input']};
     border-radius: 5px;
     border: 2px solid #E6E5E5;
-
   }
 
   input + input {
@@ -147,7 +146,6 @@ export const PaymentMethod = styled.div`
   display: flex;
   flex-direction: column;
   background-color: ${(props) => props.theme["base-card"]};
-
 
   div {
     display: flex;
@@ -196,6 +194,8 @@ export const ContentSelectedCoffee = styled.div`
 display: flex;
 flex-direction: column;
 
+
+
 h3 {
   font-family: "Baloo 2", serif;
   font-size: 1.125rem;
@@ -210,12 +210,12 @@ export const SelectedCoffee = styled.div`
   background-color: ${(props) => props.theme['base-card']};
   border-radius: 0 40px 0 40px;
   padding: 40px;
-
+  display: flex;
+  flex-direction: column;
+  
   div {
     display: flex;
-    align-items:  start;
     
-
     img {
       width: 64px;
       height: 64px;
@@ -240,6 +240,7 @@ export const SelectedCoffee = styled.div`
     justify-content: center;
     margin-top: -35px;
     margin-left: -30px;
+    margin-bottom: 58px;
 
     #ButtonADDeMinus {
     display: flex;
@@ -272,15 +273,15 @@ export const SelectedCoffee = styled.div`
     border-radius: 6px;
     font-size: 0.75rem;
     }
-  }
-
-  
+  }  
 `;
+
 export const OrderConfirmation = styled.div`
   display: flex;
   height: 100%;
   flex-direction: column;
-  
+ 
+
   div {
     display: flex;
     width: 100%;
@@ -290,5 +291,11 @@ export const OrderConfirmation = styled.div`
 `;
 
 export const ButtonConfirm = styled.button`
-
+  width: 23rem;
+  height: 2.875rem;
+  background-color: ${(props) => props.theme['yellow']};
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
 `;
