@@ -1,7 +1,8 @@
+import { NavLink } from "react-router-dom";
 import { Container } from "./styles";
-import { MapPin, ShoppingCart } from '@phosphor-icons/react'
+import { MapPin, ShoppingCart } from "@phosphor-icons/react";
 
-export function Header(){
+export function Header() {
   return (
     <Container>
       <a href="/">
@@ -9,13 +10,18 @@ export function Header(){
       </a>
       <aside>
         <div>
-          <MapPin size={22} weight="fill"/>
+          <MapPin size={22} weight="fill" />
           <span>Fortaleza, CE</span>
         </div>
-        <button>
-          <ShoppingCart size={22} weight="fill"/>
-        </button>
-      </aside> 
+
+        <nav>
+          <button>
+            <NavLink to="/cart" title="cart">
+              <ShoppingCart size={22} weight="fill" />
+            </NavLink>
+          </button>
+        </nav>
+      </aside>
     </Container>
-  )
+  );
 }
